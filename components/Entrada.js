@@ -5,6 +5,7 @@ import styles from "../styles/Entrada.module.css";
 
 function Entrada({ entrada }) {
   const { titulo, resumen, imagen, published_at, id } = entrada;
+  console.log(entrada)
   return (
     <article>
       <Image
