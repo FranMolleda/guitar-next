@@ -1,4 +1,9 @@
 
+.entrada {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
 .contenido {
     padding:2rem;
 }
@@ -15,12 +20,13 @@
     color: var(--primary)
 }
 
-.resumen{
+.resumen {
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden
 }
+
 .enlace {
     margin-top: 2rem;
     display: block;
@@ -39,5 +45,9 @@
 .enlace:hover {
     background-color: var(--primary);
     color: var(--blanco)
+}
+
+.texto {
+    white-space: pre-wrap;
 }
 
