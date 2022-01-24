@@ -1,0 +1,45 @@
+
+@media(min-width:768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Esto lo que dice internamente es: divide el elemento en 3 (  1         2           3  )líneas para colocar lo que queramos entre sus columnas */
+        column-gap: 2rem;
+    }
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+@media (min-width: 768px) {
+    .contenido {
+        grid-column: 2 / 3; /* Esto indica que queremos colocar el contenido entre la línea 2 y 3 del grid-template-columns */
+    }
+}
+
+.texto {
+    color: var(--blanco);
+    text-align: center;
+    font-size: 2.4rem
+}
+
+.enlace {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 900;
+    color: var(--blanco);
+    border: 2px solid var(--primary);
+    padding: 1rem 4rem;
+    transition-property: background-color;
+    transition-duration: .3s
+}
+
+.enlace:hover {
+    background-color: var(--primary);
+    color: var(--blanco)
+}
